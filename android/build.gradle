@@ -1,3 +1,4 @@
+apply plugin: 'kotlin-android'
 android {
     buildToolsVersion "22.0.1"
     compileSdkVersion 22

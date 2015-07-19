@@ -8,6 +8,7 @@ buildscript {
         classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
         classpath 'com.android.tools.build:gradle:1.2.3'
         classpath 'org.robovm:robovm-gradle-plugin:1.5.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:+'
     }
 }
 
@@ -54,6 +55,7 @@ project(":android") {
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
+        compile 'org.jetbrains.kotlin:kotlin-stdlib:+'
     }
 }
 
@@ -90,6 +92,7 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        compile 'org.jetbrains.kotlin:kotlin-stdlib:+'
     }
 }
 
