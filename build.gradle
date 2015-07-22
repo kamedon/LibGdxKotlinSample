@@ -61,6 +61,7 @@ project(":android") {
 
 project(":ios") {
     apply plugin: "java"
+    apply plugin: "kotlin"
     apply plugin: "robovm"
 
 
